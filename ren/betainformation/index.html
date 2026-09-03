@@ -437,6 +437,9 @@
     margin: 12px 0 0;
   }
   .home-note a{ color: var(--teal); }
+  .home-screen-inner + .home-screen-inner{
+    margin-top: 16px;
+  }
 
   .footer{
     border-top: 1px solid var(--line);
@@ -545,6 +548,8 @@
         <ul>
           <li>Sign in using the <b>Google account</b> tied to your registered email address.</li>
           <li><b>Beta access only</b> — do not share this link publicly.</li>
+          <li>📱 <b>On iPhone?</b> Skip this link — scroll down to <b>Get The Full Experience</b> and install Ren via TestFlight instead.</li>
+          <li>🤖 <b>On Android?</b> Use the link below, then follow the Home Screen instructions at the bottom of this page.</li>
         </ul>
         <span class="link-pill">ren-lav-prod.web.app</span>
       </div>
@@ -625,26 +630,58 @@
 
   <div class="home-screen">
     <p class="label">Get The Full Experience</p>
-    <div class="home-screen-inner">
-      <span class="home-screen-icon">📲</span>
+
+    <div class="home-screen-inner" style="margin-bottom: 18px;">
+      <span class="home-screen-icon">🍎</span>
       <div>
-        <h2>Add Ren to your iPhone Home Screen</h2>
-        <p>On iPhone, adding Ren as a web app makes it open full-screen, just like a native app — no browser bar, one tap from your Home Screen.</p>
+        <h2>On iPhone — Install Ren from TestFlight</h2>
+        <p>Ren is now a native iOS app. Your welcome email from Dave includes your TestFlight link — here's what to do with it.</p>
         <ul class="home-steps">
           <li>
             <span class="step-num">1</span>
-            <p>Open your link to Ren in <b>Safari</b>.</p>
+            <p>Install <b>TestFlight</b> from the App Store first — it's free and takes under a minute.</p>
           </li>
           <li>
             <span class="step-num">2</span>
-            <p>Tap the <b>Share</b> icon, then <b>Add to Home Screen</b>.</p>
+            <p>Open your <b>Light Alchemy welcome email</b> and tap the <b>TestFlight link</b> inside to install Ren.</p>
           </li>
           <li>
             <span class="step-num">3</span>
-            <p>Tap <b>Add</b> — Ren now lives on your Home Screen.</p>
+            <p>Sign in with your <b>Google account</b> once inside the app.</p>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <p>If you saved Ren as a browser shortcut before, <b>delete the old icon</b> from your Home Screen — only the TestFlight version has the full audio experience.</p>
           </li>
         </ul>
-        <p class="home-note">Must be done in Safari (not Chrome or another browser) for it to work correctly. Full Apple instructions: <a href="https://support.apple.com/guide/iphone/open-as-web-app-iphea86e5236/ios">support.apple.com/guide/iphone/open-as-web-app</a></p>
+        <p class="home-note">Everything you've built with Ren — your history, habits, and journey — comes with you. Nothing resets.</p>
+      </div>
+    </div>
+
+    <div class="home-screen-inner" style="background: var(--card); border: 1px solid var(--line);">
+      <span class="home-screen-icon">🤖</span>
+      <div>
+        <h2>On Android — Save Ren to Your Home Screen</h2>
+        <p>TestFlight is iOS only. Android users stay on the web version — nothing changes, nothing is lost. Save Ren to your Home Screen for one-tap access.</p>
+        <ul class="home-steps">
+          <li>
+            <span class="step-num">1</span>
+            <p>Open <b>Chrome</b> and visit your Ren link: <b>ren-lav-prod.web.app</b></p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <p>Tap the <b>three-dot menu</b> in the top-right corner of Chrome.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <p>Tap <b>Add to Home Screen</b> (or <b>Install App</b> if shown).</p>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <p>Confirm by tapping <b>Add</b> — Ren will appear on your Home Screen just like a native app.</p>
+          </li>
+        </ul>
+        <p class="home-note">An Android native app is on the roadmap. You'll be the first to know when that changes.</p>
       </div>
     </div>
   </div>
